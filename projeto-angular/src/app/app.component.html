@@ -1,8 +1,24 @@
 Meu Primeiro Projeto Angular
 <ola-angular>
 </ola-angular>
-
 <app-ola-angular-cli>
-
-
 </app-ola-angular-cli>
+
+
+<div class="container m-3 border p-3">
+    <button type="button" class="btn btn-primary">Adicionar</button>
+</div>
+
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="nomeInput">Nome</label>
+            <input type="nome" class="form-control" id="nomeInput" placeholder="Digite um nome ">
+        </div>
+
+        <button type="button" class="btn btn-primary btn-block" (click)="adicionar()">Adicionar</button>
+        <div class="alert alert-primary mt-3 p-3">
+            {{nomeInput}}
+        </div>
+    </form>
+</div>
